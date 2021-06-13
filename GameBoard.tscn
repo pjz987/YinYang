@@ -1,0 +1,458 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Yang.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Yin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://YinWall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://YangWall.tscn" type="PackedScene" id=4]
+
+[node name="GameBoard" type="Node2D"]
+
+[node name="YinWalls" type="Node2D" parent="."]
+position = Vector2( 160, 0 )
+
+[node name="Left" type="Node2D" parent="YinWalls"]
+
+[node name="YinWall" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 5 )
+
+[node name="YinWall2" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 15 )
+
+[node name="YinWall3" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 25 )
+
+[node name="YinWall4" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 35 )
+
+[node name="YinWall5" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 45 )
+
+[node name="YinWall6" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 55 )
+
+[node name="YinWall7" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 65 )
+
+[node name="YinWall8" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 75 )
+
+[node name="YinWall9" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 85 )
+
+[node name="YinWall10" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 95 )
+
+[node name="YinWall11" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 105 )
+
+[node name="YinWall12" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 115 )
+
+[node name="YinWall13" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 125 )
+
+[node name="YinWall14" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 135 )
+
+[node name="YinWall15" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 145 )
+
+[node name="YinWall16" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 155 )
+
+[node name="YinWall17" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 165 )
+
+[node name="YinWall18" parent="YinWalls/Left" instance=ExtResource( 3 )]
+position = Vector2( 5, 175 )
+
+[node name="Right" type="Node2D" parent="YinWalls"]
+position = Vector2( 150, 0 )
+
+[node name="YinWall" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 5 )
+
+[node name="YinWall2" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 15 )
+
+[node name="YinWall3" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 25 )
+
+[node name="YinWall4" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 35 )
+
+[node name="YinWall5" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 45 )
+
+[node name="YinWall6" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 55 )
+
+[node name="YinWall7" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 65 )
+
+[node name="YinWall8" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 75 )
+
+[node name="YinWall9" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 85 )
+
+[node name="YinWall10" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 95 )
+
+[node name="YinWall11" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 105 )
+
+[node name="YinWall12" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 115 )
+
+[node name="YinWall13" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 125 )
+
+[node name="YinWall14" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 135 )
+
+[node name="YinWall15" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 145 )
+
+[node name="YinWall16" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 155 )
+
+[node name="YinWall17" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 165 )
+
+[node name="YinWall18" parent="YinWalls/Right" instance=ExtResource( 3 )]
+position = Vector2( 5, 175 )
+
+[node name="Top" type="Node2D" parent="YinWalls"]
+position = Vector2( 10, 10 )
+rotation = -1.5708
+
+[node name="YinWall" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 5 )
+
+[node name="YinWall2" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 15 )
+
+[node name="YinWall3" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 25 )
+
+[node name="YinWall4" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 35 )
+
+[node name="YinWall5" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 45 )
+
+[node name="YinWall6" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 55 )
+
+[node name="YinWall7" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 65 )
+
+[node name="YinWall8" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 75 )
+
+[node name="YinWall9" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 85 )
+
+[node name="YinWall10" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 95 )
+
+[node name="YinWall11" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 105 )
+
+[node name="YinWall12" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 115 )
+
+[node name="YinWall13" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 125 )
+
+[node name="YinWall14" parent="YinWalls/Top" instance=ExtResource( 3 )]
+position = Vector2( 5, 135 )
+
+[node name="Bottom" type="Node2D" parent="YinWalls"]
+position = Vector2( 10, 180 )
+rotation = -1.5708
+
+[node name="YinWall" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 5 )
+
+[node name="YinWall2" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 15 )
+
+[node name="YinWall3" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 25 )
+
+[node name="YinWall4" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 35 )
+
+[node name="YinWall5" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 45 )
+
+[node name="YinWall6" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 55 )
+
+[node name="YinWall7" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 65 )
+
+[node name="YinWall8" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 75 )
+
+[node name="YinWall9" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 85 )
+
+[node name="YinWall10" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 95 )
+
+[node name="YinWall11" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 105 )
+
+[node name="YinWall12" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 115 )
+
+[node name="YinWall13" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 125 )
+
+[node name="YinWall14" parent="YinWalls/Bottom" instance=ExtResource( 3 )]
+position = Vector2( 5, 135 )
+
+[node name="YinBackground" type="ColorRect" parent="YinWalls"]
+margin_right = 160.0
+margin_bottom = 180.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YangWalls" type="Node2D" parent="."]
+
+[node name="Left" type="Node2D" parent="YangWalls"]
+
+[node name="YangWall" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 5 )
+
+[node name="YangWall2" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 15 )
+
+[node name="YangWall3" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 25 )
+
+[node name="YangWall4" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 35 )
+
+[node name="YangWall5" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 45 )
+
+[node name="YangWall6" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 55 )
+
+[node name="YangWall7" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 65 )
+
+[node name="YangWall8" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 75 )
+
+[node name="YangWall9" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 85 )
+
+[node name="YangWall10" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 95 )
+
+[node name="YangWall11" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 105 )
+
+[node name="YangWall12" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 115 )
+
+[node name="YangWall13" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 125 )
+
+[node name="YangWall14" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 135 )
+
+[node name="YangWall15" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 145 )
+
+[node name="YangWall16" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 155 )
+
+[node name="YangWall17" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 165 )
+
+[node name="YangWall18" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 175 )
+
+[node name="YangWall19" parent="YangWalls/Left" instance=ExtResource( 4 )]
+position = Vector2( 5, 175 )
+
+[node name="Right" type="Node2D" parent="YangWalls"]
+position = Vector2( 150, 0 )
+
+[node name="YangWall" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 5 )
+
+[node name="YangWall2" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 15 )
+
+[node name="YangWall3" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 25 )
+
+[node name="YangWall4" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 35 )
+
+[node name="YangWall5" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 45 )
+
+[node name="YangWall6" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 55 )
+
+[node name="YangWall7" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 65 )
+
+[node name="YangWall8" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 75 )
+
+[node name="YangWall9" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 85 )
+
+[node name="YangWall10" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 95 )
+
+[node name="YangWall11" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 105 )
+
+[node name="YangWall12" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 115 )
+
+[node name="YangWall13" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 125 )
+
+[node name="YangWall14" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 135 )
+
+[node name="YangWall15" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 145 )
+
+[node name="YangWall16" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 155 )
+
+[node name="YangWall17" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 165 )
+
+[node name="YangWall18" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 175 )
+
+[node name="YangWall19" parent="YangWalls/Right" instance=ExtResource( 4 )]
+position = Vector2( 5, 175 )
+
+[node name="Top" type="Node2D" parent="YangWalls"]
+position = Vector2( 10, 10 )
+rotation = -1.5708
+
+[node name="YangWall" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 5 )
+
+[node name="YangWall2" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 15 )
+
+[node name="YangWall3" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 25 )
+
+[node name="YangWall4" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 35 )
+
+[node name="YangWall5" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 45 )
+
+[node name="YangWall6" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 55 )
+
+[node name="YangWall7" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 65 )
+
+[node name="YangWall8" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 75 )
+
+[node name="YangWall9" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 85 )
+
+[node name="YangWall10" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 95 )
+
+[node name="YangWall11" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 105 )
+
+[node name="YangWall12" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 115 )
+
+[node name="YangWall13" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 125 )
+
+[node name="YangWall14" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 135 )
+
+[node name="YangWall15" parent="YangWalls/Top" instance=ExtResource( 4 )]
+position = Vector2( 5, 145 )
+
+[node name="Bottom" type="Node2D" parent="YangWalls"]
+position = Vector2( 10, 180 )
+rotation = -1.5708
+
+[node name="YangWall" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 5 )
+
+[node name="YangWall2" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 15 )
+
+[node name="YangWall3" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 25 )
+
+[node name="YangWall4" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 35 )
+
+[node name="YangWall5" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 45 )
+
+[node name="YangWall6" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 55 )
+
+[node name="YangWall7" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 65 )
+
+[node name="YangWall8" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 75 )
+
+[node name="YangWall9" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 85 )
+
+[node name="YangWall10" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 95 )
+
+[node name="YangWall11" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 105 )
+
+[node name="YangWall12" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 115 )
+
+[node name="YangWall13" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 125 )
+
+[node name="YangWall14" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 135 )
+
+[node name="YangWall15" parent="YangWalls/Bottom" instance=ExtResource( 4 )]
+position = Vector2( 5, 145 )
+
+[node name="YangBackground" type="ColorRect" parent="YangWalls"]
+margin_right = 160.0
+margin_bottom = 180.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Yin" parent="." instance=ExtResource( 2 )]
+position = Vector2( 60, 45 )
+collision/safe_margin = 0.001
+
+[node name="Yang" parent="." instance=ExtResource( 1 )]
+position = Vector2( 260, 135 )
+collision/safe_margin = 0.001

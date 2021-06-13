@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Yin.gd" type="Script" id=1]
-[ext_resource path="res://PlayerCollisionShape.tres" type="Shape2D" id=2]
+[ext_resource path="res://YinWall.gd" type="Script" id=1]
+[ext_resource path="res://WallCollisionShape.tres" type="Shape2D" id=2]
 
-[node name="Yin" type="KinematicBody2D"]
+[node name="YinWall" type="StaticBody2D"]
 collision_mask = 2
 script = ExtResource( 1 )
 
@@ -11,10 +11,10 @@ script = ExtResource( 1 )
 shape = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -8.0
-margin_top = -8.0
-margin_right = 8.0
-margin_bottom = 8.0
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 5.0
+margin_bottom = 5.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
