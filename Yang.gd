@@ -16,5 +16,5 @@ func get_inputs() -> Vector2:
 	).normalized() * MOVE_SPEED
 
 func move(input_vector) -> void:
-	velocity = move_and_slide(Vector2(input_vector.x, 0))
-	velocity = move_and_slide(Vector2(0, input_vector.y))
+	velocity = move_and_slide(input_vector, Vector2.ZERO, false, 4, PI/4, false)
+#	velocity = move_and_slide(Vector2(0, input_vector.y))
