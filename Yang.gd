@@ -1,20 +1,45 @@
 extends KinematicBody2D
 class_name Yang
 
-export var MOVE_SPEED = 50
-var velocity: Vector2
+"""
+Shoutout to HeartBeast!
+This borrows heavily from HeartBeast's Metroidvania Project:
+https://github.com/uheartbeast/metroidvania/blob/master/Player/Player.gd
+From his 1-Bit-Godot Course:
+https://heartbeast-gamedev-school.teachable.com/p/1-bit-godot-course-by-heartbeast
+"""
 
+export (int) var ACCELERATION = 128
+export (int) var MAX_SPEED = 32
+export (float) var FRICTION = 0.25
 
-func _physics_process(_delta):
+var motion := Vector2.ZERO
+
+func _physics_process(delta):
 	var input_vector := get_inputs()
-	move(input_vector)
+	apply_force(input_vector, delta)
+	apply_friction(input_vector)
+	move()
 
 func get_inputs() -> Vector2:
 	return Vector2(
-		Input.get_action_strength("ui_right")- Input.get_action_strength("ui_left"),
-		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
-	).normalized() * MOVE_SPEED
+		Input.get_action_strength("l")- Input.get_action_strength("j"),
+		Input.get_action_strength("k") - Input.get_action_strength("i")
+	).normalized()
 
-func move(input_vector) -> void:
-	velocity = move_and_slide(input_vector, Vector2.ZERO, false, 4, PI/4, false)
-#	velocity = move_and_slide(Vector2(0, input_vector.y))
+func move() -> void:
+	motion = move_and_slide(motion)
+
+func apply_force(input_vector, delta):
+	if input_vector.x != 0:
+		motion.x += input_vector.x * ACCELERATION * delta
+		motion.x = clamp(motion.x, -MAX_SPEED, MAX_SPEED)
+	if input_vector.y != 0:
+		motion.y += input_vector.y * ACCELERATION * delta
+		motion.y = clamp(motion.y, -MAX_SPEED, MAX_SPEED)
+
+func apply_friction(input_vector):
+	if input_vector.x == 0:
+		motion.x = lerp(motion.x, 0, FRICTION)
+	if input_vector.y == 0:
+		motion.y = lerp(motion.y, 0, FRICTION)
