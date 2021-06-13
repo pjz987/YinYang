@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Yin/YinWall.gd" type="Script" id=1]
+
 [ext_resource path="res://WallCollisionShape.tres" type="Shape2D" id=2]
 
 [node name="YinWall" type="StaticBody2D"]

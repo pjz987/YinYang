@@ -3,7 +3,6 @@
 [ext_resource path="res://Yang/YangWall.gd" type="Script" id=1]
 [ext_resource path="res://WallCollisionShape.tres" type="Shape2D" id=2]
 
-
 [node name="YangWall" type="StaticBody2D"]
 collision_layer = 2
 script = ExtResource( 1 )
