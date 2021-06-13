@@ -12,39 +12,27 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Yang",
 "language": "GDScript",
-"path": "res://Yang.gd"
-}, {
-"base": "RigidBody2D",
-"class": "YangBlock",
-"language": "GDScript",
-"path": "res://YangBlock.gd"
+"path": "res://Yang/Yang.gd"
 }, {
 "base": "StaticBody2D",
 "class": "YangWall",
 "language": "GDScript",
-"path": "res://YangWall.gd"
+"path": "res://Yang/YangWall.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Yin",
 "language": "GDScript",
-"path": "res://Yin.gd"
-}, {
-"base": "RigidBody2D",
-"class": "YinBlock",
-"language": "GDScript",
-"path": "res://YinBlock.gd"
+"path": "res://Yin/Yin.gd"
 }, {
 "base": "StaticBody2D",
 "class": "YinWall",
 "language": "GDScript",
-"path": "res://YinWall.gd"
+"path": "res://Yin/YinWall.gd"
 } ]
 _global_script_class_icons={
 "Yang": "",
-"YangBlock": "",
 "YangWall": "",
 "Yin": "",
-"YinBlock": "",
 "YinWall": ""
 }
 
