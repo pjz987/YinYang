@@ -2,6 +2,8 @@ extends KinematicBody2D
 class_name Yang
 
 export var MOVE_SPEED = 50
+var velocity: Vector2
+
 
 func _physics_process(_delta):
 	var input_vector := get_inputs()
@@ -14,5 +16,5 @@ func get_inputs() -> Vector2:
 	).normalized() * MOVE_SPEED
 
 func move(input_vector) -> void:
-	move_and_slide(Vector2(input_vector.x, 0))
-	move_and_slide(Vector2(0, input_vector.y))
+	velocity = move_and_slide(Vector2(input_vector.x, 0))
+	velocity = move_and_slide(Vector2(0, input_vector.y))
