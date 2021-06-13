@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/YinYangScreenshot.png-737cfec3d380e54804cb0dfa5d4c3c8a.stex"
+path="res://.import/YinYangScreenshot.png-ab45e27a3c28d7c6338aaa39a6e881c9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://YinYangScreenshot.png"
-dest_files=[ "res://.import/YinYangScreenshot.png-737cfec3d380e54804cb0dfa5d4c3c8a.stex" ]
+source_file="res://Yin/YinYangScreenshot.png"
+dest_files=[ "res://.import/YinYangScreenshot.png-ab45e27a3c28d7c6338aaa39a6e881c9.stex" ]
 
 [params]
 
